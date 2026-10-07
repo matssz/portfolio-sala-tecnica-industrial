@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Portfólio | Sala Técnica Industrial de Borda</title>
+<style>
+@page { size: A4; margin: 13mm; }
+* { box-sizing: border-box; } body { margin: 0; color: #173d37; background: #f6f3ea; font: 14px Arial, sans-serif; }
+.page { max-width: 900px; margin: 0 auto; padding: 42px; background: #fffdf8; } .eyebrow { color: #16877f; font-size: 11px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; }
+h1 { max-width: 700px; margin: 12px 0 8px; font-size: 35px; line-height: 1.03; } h2 { margin: 29px 0 10px; font-size: 20px; }
+p, li { color: #45625c; line-height: 1.55; } .notice { border-left: 4px solid #cc6b50; padding: 11px 14px; background: #fff0ea; color: #7f4234; }
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 22px 0; } .metric { padding: 15px; border-radius: 10px; background: #d8efe8; } .metric b { display: block; font-size: 25px; } .metric span { font-size: 11px; font-weight: 700; }
+img { width: 100%; margin: 16px 0 5px; border: 1px solid #cbded8; border-radius: 10px; } table { width: 100%; border-collapse: collapse; font-size: 12px; } th { color: white; background: #173d37; text-align: left; } td, th { padding: 9px; border-bottom: 1px solid #d8e4e0; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; } footer { margin-top: 30px; padding-top: 12px; border-top: 1px solid #d8e4e0; color: #617a74; font-size: 10px; }
+</style></head><body><main class="page">
+<span class="eyebrow">Projeto conceitual de portfólio</span><h1>Sala Técnica Industrial de Borda</h1><p>Documentação 2D, inventário técnico e automação leve para uma implantação conceitual em ambiente industrial.</p>
+<p class="notice"><b>Limite do material:</b> não é projeto executivo, memorial de cálculo, especificação de fabricante ou orientação para obra. Os números e posicionamentos existem apenas para demonstrar método de organização e documentação.</p>
+<section class="metrics"><div class="metric"><b>4</b><span>RACKS CONCEITUAIS</span></div><div class="metric"><b>224</b><span>PORTAS DE REFERÊNCIA</span></div><div class="metric"><b>4280 W</b><span>CARGA ILUSTRATIVA</span></div></section>
+<h2>Entregáveis</h2><div class="two"><div><ul><li>Planta geral da sala em 2D.</li><li>Posicionamento de racks e corredor técnico.</li><li>Rota conceitual de cabeamento.</li></ul></div><div><ul><li>Lista de equipamentos rastreável.</li><li>Ocupação de rack, portas e carga.</li><li>DXF editável e prévia vetorial.</li></ul></div></div>
+<img src="planta_conceitual.svg" alt="Planta conceitual da sala técnica">
+<h2>Resumo de capacidade</h2><table><thead><tr><th>Rack</th><th>Ocupação</th><th>Livre</th><th>Portas</th><th>Carga estimada</th></tr></thead><tbody><tr><td>R01</td><td>4U / 42U</td><td>38U</td><td>104</td><td>410 W</td></tr><tr><td>R02</td><td>6U / 42U</td><td>36U</td><td>8</td><td>1800 W</td></tr><tr><td>R03</td><td>5U / 42U</td><td>37U</td><td>0</td><td>1250 W</td></tr><tr><td>R04</td><td>4U / 42U</td><td>38U</td><td>112</td><td>820 W</td></tr></tbody></table>
+<h2>Método demonstrado</h2><p>O inventário é mantido em CSV. Um script Python valida a ocupação de 42U por rack e gera automaticamente a lista de materiais, o resumo de capacidade, a planta DXF, a prévia SVG e esta página. Assim, alteração de dados pode ser refletida nos entregáveis sem recálculo manual.</p>
+<footer>Portfólio autoral para entrevista. Para implantação real: vistoria, requisitos, normas, cálculos e aprovação de profissionais habilitados.</footer>
+</main></body></html>
